@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Загловок страницы</title>
-    {% load static %}
+        {% load static %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
 </head>
 <body>
+<div class="jumbotton" align="center">
 
-    <div class="jumbotton" align="center">
-
-        <div class="container" align="center">
-            <h1>antifraud</h1>
-                {% block content %}
-                {% endblock %}
-            <p>
-                <a href="/" class="btn btn-success btn-lg">Главная страница</a>
-                <a href="/news" class="btn btn-primary btn-lg">Узнать больше &raquo;</a>
-                 <a href="/contact" class="btn btn-info btn-lg">Контакты &raquo;</a>
-                <a href="/info" class="btn btn-dark btn-lg">Информация &raquo;</a>
-
-            </p>
-        </div>
-    </div>
     <div class="container" align="center">
-        <a href="/news" class="btn btn-primary btn-lg">Узнать больше &raquo;</a>
-        <a href="/contact" class="btn btn-info btn-lg">Контакты &raquo;</a>
-        <img src="{% static 'mainApp/image/1.jpg'%}" class="img-thumbnail" height="100%" width="100%">
+        <h1></h1>
+
+        <p>
+            <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+            <a href="/news" class="btn btn-primary btn-lg">Узнать больше &raquo;</a>
+            <a href="/contact" class="btn btn-info btn-lg">Контакты &raquo;</a>
+            <a href="/info" class="btn btn-dark btn-lg">Информация &raquo;</a>
+            <a href="/ccstat" class="btn btn-outline-primary">ccstat</a>
+            <a href="/black_list" class="btn btn-outline-primary">Black list</a>
+            <a href="/search_glm" class="btn btn-outline-primary">Поиск заявки на ГЛМ &raquo;</a>
+            <a href="/add_block" class="btn btn-outline-primary">Установка ограничения&raquo;</a>
+            <a href="/open_block" class="btn btn-outline-primary">Снятие огранниченния 0.08&raquo;</a>
+            <a href="/a_24" class="btn btn-outline-primary">A-24 &raquo;</a>
+            <a href="/glm" class="btn btn-outline-primary">Подача заявки на ГЛМ &raquo;</a>
+            <a href="/video_call" class="btn btn-outline-primary">Video call &raquo;</a>
+            <a href="/token" class="btn btn-outline-primary">Токенизация &raquo;</a>
+            <a href="/fin_number" class="btn btn-outline-primary">Фин.телефон &raquo;</a>
+            <a href="/card_in_3_hands" class="btn btn-outline-primary">Карта в 3-х руках&raquo;</a>
+            <a href="/security_page" class="btn btn-outline-primary">Страница безопасности&raquo;</a>
+            <a href="/payments_8_class" class="btn btn-outline-primary">Платежи на 8-й класс&raquo;</a>
+            <a href="/dash_or" class="btn btn-outline-primary">Дашборд Операционных рисков&raquo;</a>
+
+         {% block content %}
+        {% endblock %}
+        </p>
     </div>
+</div>
+<!--    <div class="container" align="center">-->
+<!--        <img src="{% static 'mainApp/image/1.jpg'%}" class="img-thumbnail" height="100%" width="100%">-->
+<!--    </div>-->
 </body>
 </html>
